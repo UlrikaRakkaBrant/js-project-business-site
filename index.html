@@ -1,43 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Cheap Truth</title>
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 </head>
 
 <body>
-  <h1>Billiga tarotkort visar alltid rätt</h1>
-  <section>
+  <nav class="navbar">
+    <div class="logo">Cheap Truth</div>
+    <div
+      class="hamburger"
+      id="hamburger"
+    >
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul
+      class="nav-links"
+      id="nav-links"
+    >
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+      <!-- Kundvagnslänk med dynamiskt antal varor
+      <li><a
+          href="#"
+          id="cart-icon"
+        >
+          <span id="cart-count">0</span> Varor i kundvagn -->
+    </ul>
+  </nav>
 
-    <nav class="navbar">
-
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-    </nav>
-  </section>
-
-  <hr>
-
-  <section>
-    <h2>Trevliga kort att välja på</h2>
-    <div class="flex-container">
-      <div class="card">Card 1</div>
-      <div class="card">Card 2</div>
-      <div class="card">Card 3</div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to your pocket oracle!</h1>
+      <p>Choose a card or go for the luxury truth.</p>
+      <a
+        href="#tjanster"
+        class="cta-button"
+      >Läs mer</a>
     </div>
   </section>
 
+  <section class="articles-grid">
+    <!-- Artikel 1 till 72 -->
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 1"
+      >
+      <h2>Artikel 1</h2>
+      <p>Detta är en kort beskrivning av artikel 1.</p>
+      <a href="#">Läs mer</a>
+      <!--<p>Price: 299 kr</p>
+      <button
+        class="add-to-cart"
+        data-product-id="1"
+      >Add to Cart</button>-->
+    </article>
 
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 2"
+      >
+      <h2>Artikel 2</h2>
+      <p>Detta är en kort beskrivning av artikel 2.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 3"
+      >
+      <h2>Artikel 3</h2>
+      <p>Detta är en kort beskrivning av artikel 3.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 4"
+      >
+      <h2>Artikel 4</h2>
+      <p>Detta är en kort beskrivning av artikel 4.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 5"
+      >
+      <h2>Artikel 5</h2>
+      <p>Detta är en kort beskrivning av artikel 5.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 6"
+      >
+      <h2>Artikel 6</h2>
+      <p>Detta är en kort beskrivning av artikel 6.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 7"
+      >
+      <h2>Artikel 7</h2>
+      <p>Detta är en kort beskrivning av artikel 7.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 8"
+      >
+      <h2>Artikel 8</h2>
+      <p>Detta är en kort beskrivning av artikel 8.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 9"
+      >
+      <h2>Artikel 9</h2>
+      <p>Detta är en kort beskrivning av artikel 9.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 10"
+      >
+      <h2>Artikel 10</h2>
+      <p>Detta är en kort beskrivning av artikel 10.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 11"
+      >
+      <h2>Artikel 11</h2>
+      <p>Detta är en kort beskrivning av artikel 11.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 12"
+      >
+      <h2>Artikel 12</h2>
+      <p>Detta är en kort beskrivning av artikel 12.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 13"
+      >
+      <h2>Artikel 13</h2>
+      <p>Detta är en kort beskrivning av artikel 13.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 14"
+      >
+      <h2>Artikel 14</h2>
+      <p>Detta är en kort beskrivning av artikel 14.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 15"
+      >
+      <h2>Artikel 15</h2>
+      <p>Detta är en kort beskrivning av artikel 15.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 16"
+      >
+      <h2>Artikel 16</h2>
+      <p>Detta är en kort beskrivning av artikel 16.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 17"
+      >
+      <h2>Artikel 17</h2>
+      <p>Detta är en kort beskrivning av artikel 17.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 18"
+      >
+      <h2>Artikel 18</h2>
+      <p>Detta är en kort beskrivning av artikel 18.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 19"
+      >
+      <h2>Artikel 19</h2>
+      <p>Detta är en kort beskrivning av artikel 19.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 20"
+      >
+      <h2>Artikel 20</h2>
+      <p>Detta är en kort beskrivning av artikel 20.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <!-- Upprepa denna struktur för de 72 artiklarna -->
+    <!-- För att spara plats, visar jag inte alla här, men upprepa likadant som ovan för artikel 21 till artikel 72 -->
+
+    <!-- Exempelvis -->
+    <article class="article-card">
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Artikelbild 21"
+      >
+      <h2>Artikel 21</h2>
+      <p>Detta är en kort beskrivning av artikel 21.</p>
+      <a href="#">Läs mer</a>
+    </article>
+
+    <!-- Fortsätt till artikel 72 -->
+  </section>
+
+
+  <form
+    action="http://httpbin.org/anything"
+    method="post"
+  >
+    <h2>Shipping & Billing Information</h2>
+
+    <fieldset>
+      <label>
+        <span>Name</span>
+        <input
+          type="
+          text"
+          name="name"
+          placeholder="Name Nameson"
+        />
+      </label>
+
+      <label>
+        <span>Email</span>
+        <input
+          type="email"
+          name="email"
+          placeholder="name@example.com"
+        />
+      </label>
+
+      <label>
+        <span>Adress</span>
+        <input
+          type="text"
+          name="adress"
+          placeholder=""
+        />
+      </label>
+
+      <label>
+        <span>City</span>
+        <input
+          type="text"
+          name="city"
+          placeholder=""
+        />
+      </label>
+
+      <label>
+        <span>Postal Code</span>
+        <input
+          type="text"
+          name="postalCode"
+          placeholder=""
+        />
+      </label>
+
+      <label>
+        <span>Country</span>
+        <select name="country">
+          <option values="SE">Sweden</option>
+          <option values="Fr">France</option>
+        </select>
+      </label>
+
+    </fieldset>
+
+    <button type="submit">Pay $34</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
