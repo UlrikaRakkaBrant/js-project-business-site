@@ -20,7 +20,7 @@ body {
   top: 0;
   background-color: #333;
   z-index: 1000;
-  /* Se till att navbaren ligger ovanpå innehållet */
+  /* Make sure the navbar is on top of the content */
 }
 
 .logo {
@@ -67,22 +67,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Kundvagnslänk
-#cart-icon {
-  position: relative;
-  cursor: pointer;
-}
-
-#cart-count {
-  background-color: red;
-  color: white;
-  font-size: 14px;
-  padding: 2px 6px;
-  border-radius: 50%;
-  position: absolute;
-  top: -5px;
-  right: -10px;*/
-
 /* Hamburger menu styles */
 .hamburger {
   display: none;
@@ -97,119 +81,13 @@ nav ul li a {
   margin: 5px 0;
 }
 
-/* För mobil (max-width: 600px) */
-@media (max-width: 600px) {
-  .articles-grid {
-    grid-template-columns: 1fr;
-    /* En kolumn för små skärmar */
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #333;
-    width: 200px;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-    /* Minska storleken på rubriken */
-  }
-
-  .hero p {
-    font-size: 1rem;
-    /* Minska textstorleken för mobil */
-  }
-
-  .cta-button {
-    font-size: 1rem;
-    /* Justera knappens textstorlek */
-    padding: 10px 20px;
-    /* Minska storleken på knappen */
-  }
-}
-
-/* För tablet (min-width: 601px och max-width: 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .articles-grid {
-    grid-template-columns: repeat(2, 1fr);
-    /* Två kolumner för tablets */
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-    /* Minska storleken på rubriken för tablet */
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-    /* Minska textstorleken för tablet */
-  }
-
-  .cta-button {
-    font-size: 1.1rem;
-    /* Justera knappens textstorlek */
-    padding: 12px 25px;
-    /* Justera knappens storlek för tablet */
-  }
-}
-
-/* För desktop (min-width: 1025px) */
-@media (min-width: 1025px) {
-  .articles-grid {
-    grid-template-columns: repeat(4, 1fr);
-    /* Fyra kolumner för större skärmar */
-  }
-
-  .hamburger {
-    display: none;
-    /* Hide hamburger menu on desktop */
-  }
-
-  .nav-links {
-    display: flex;
-    /* Show the nav links directly on desktop */
-  }
-
-  .hero h1 {
-    font-size: 3rem;
-    /* Större rubrik för desktop */
-  }
-
-  .hero p {
-    font-size: 1.5rem;
-    /* Större text på desktop */
-  }
-
-  .cta-button {
-    font-size: 1.2rem;
-    /* Knappen får större text på desktop */
-    padding: 15px 30px;
-    /* Större knapp på desktop */
-  }
-}
-
 /* Hero section */
 .hero {
   background-image: url('https://d3d00swyhr67nd.cloudfront.net/w1200h1200/collection/NTIV/FENT/NTIV_FENT_1449048-001.jpg');
-  /* Byt ut med din bilds sökväg */
   background-size: cover;
   background-position: center;
   height: 100vh;
-  /* Gör så att hero-sektionen täcker hela höjden på webbläsarfönstret */
+  /* Make the hero section cover the entire height of the browser window */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,7 +96,7 @@ nav ul li a {
   margin-top: auto
 }
 
-/* För att hålla innehållet centralt och snyggt */
+/* To keep the content central and neat */
 .hero-content {
   max-width: 600px;
   padding: 20px;
@@ -239,6 +117,7 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
+/*Call to Action button*/
 .cta-button {
   background-color: #FF6F61;
   color: white;
@@ -256,14 +135,15 @@ nav ul li a {
 /* Container för grid-layout */
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  /* Skapar en dynamisk grid med minimalt 300px per kolumn */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  /* Creates a dynamic grid with a minimum of 300px per column */
   gap: 20px;
-  /* Avstånd mellan korten */
+  /* Distance between cards */
   padding: 20px;
+  align-items: center;
 }
 
-/* Stil för varje artikelkort */
+/* Style for each article card */
 .article-card {
   background-color: #fff;
   border-radius: 10px;
@@ -302,7 +182,6 @@ nav ul li a {
   background-color: #FF3D2E;
 }
 
-
 form {
   border: 1px solid #e8e8fb;
   border-radius: 4px;
@@ -336,7 +215,6 @@ label: last-child {
   border-bottom: none;
 }
 
-/*You will eant more specific classes*/
 span {
   width: 30%;
   text-align: right;
@@ -403,4 +281,122 @@ button {
 :-moz-placeholder {
   /* Firefox 18- */
   color: #aab7c4;
+}
+
+/* Mobile (max-width: 667px) */
+@media (min-width: 320px) and (max-width: 667px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    /* Reduce the size of the header */
+  }
+
+  .hero p {
+    font-size: 1rem;
+    /* Reduce text size for mobile */
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    /* Adjust button text size*/
+    padding: 10px 20px;
+    /* Reduce the size of the button */
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr;
+    /* One column for small screens */
+    justify-items: center;
+    align-items: start;
+    /* Start the items vertically */
+    padding: none;
+  }
+
+  .article-card h2 {
+    font-size: 1.5rem;
+    /* Reduce the size of the header */
+    width: 90%;
+    /* Make the header take up more space */
+    max-width: 350px;
+    margin: 0%;
+  }
+}
+
+/* For tablet (min-width: 668px and max-width: 1024px) */
+@media (min-width: 668px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+    /* Makes h1 smaller on tablets */
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    /* Makes fonts smaller on tablets */
+  }
+
+  .cta-button {
+    font-size: 1.1rem;
+    /* Adjust button text size */
+    padding: 12px 25px;
+    /* Adjust button size for tablet */
+  }
+
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns for tablets */
+  }
+}
+
+/* For desktop (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .hamburger {
+    display: none;
+    /* Hide hamburger menu on desktop */
+  }
+
+  .nav-links {
+    display: flex;
+    /* Show the nav links directly on desktop */
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    /* Larger header for desktop */
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    /* Larger text on desktop */
+  }
+
+  .cta-button {
+    font-size: 1.2rem;
+    /* The button gets larger text on desktop */
+    padding: 15px 30px;
+    /* Larger button on desktop */
+  }
+
+  .articles-grid {
+    grid-template-columns: repeat(4, 1fr);
+    /* Four columns for larger screens */
+  }
 }
